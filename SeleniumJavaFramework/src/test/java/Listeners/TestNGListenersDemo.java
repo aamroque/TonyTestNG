@@ -32,7 +32,7 @@ public class TestNGListenersDemo {
 		driver.get("https://www.google.com");
 		WebElement textBox = driver.findElement(By.name("q"));
 		textBox.sendKeys("Automation");
-		driver.findElement(By.name("btnK")).sendKeys(Keys.RETURN);
+		//driver.findElement(By.name("btnK")).sendKeys(Keys.RETURN);
 	}
 	
 	@Test(priority = 2)

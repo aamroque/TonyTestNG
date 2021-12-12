@@ -1,25 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14298" started-at="2021-12-12T10:44:58 SGT" finished-at="2021-12-12T10:45:12 SGT">
+  <suite name="Suite3" duration-ms="18000" started-at="2021-12-12T21:13:31 SGT" finished-at="2021-12-12T21:13:49 SGT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14298" started-at="2021-12-12T10:44:58 SGT" finished-at="2021-12-12T10:45:12 SGT">
-      <class name="Test.UntitledTestcase">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Test.UntitledTestcase@25bbf683]" name="setUp" is-config="true" duration-ms="5887" started-at="2021-12-12T10:44:58 SGT" finished-at="2021-12-12T10:45:04 SGT">
+    <test name="TestOnChrome" duration-ms="11610" started-at="2021-12-12T21:13:31 SGT" finished-at="2021-12-12T21:13:43 SGT">
+      <class name="Demo.TestNGMultiBrowserDemo">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:Demo.TestNGMultiBrowserDemo@954b04f]" name="setUp" is-config="true" duration-ms="5098" started-at="2021-12-12T21:13:31 SGT" finished-at="2021-12-12T21:13:36 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testUntitledTestcase()[pri:0, instance:Test.UntitledTestcase@25bbf683]" name="testUntitledTestcase" duration-ms="7524" started-at="2021-12-12T10:45:04 SGT" finished-at="2021-12-12T10:45:12 SGT">
+        <test-method status="PASS" signature="test1()[pri:0, instance:Demo.TestNGMultiBrowserDemo@954b04f]" name="test1" duration-ms="6208" started-at="2021-12-12T21:13:36 SGT" finished-at="2021-12-12T21:13:42 SGT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testUntitledTestcase -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Test.UntitledTestcase@25bbf683]" name="tearDown" is-config="true" duration-ms="823" started-at="2021-12-12T10:45:12 SGT" finished-at="2021-12-12T10:45:12 SGT">
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Demo.TestNGMultiBrowserDemo@954b04f]" name="tearDown" is-config="true" duration-ms="231" started-at="2021-12-12T21:13:42 SGT" finished-at="2021-12-12T21:13:43 SGT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Test.UntitledTestcase -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- Demo.TestNGMultiBrowserDemo -->
+    </test> <!-- TestOnChrome -->
+    <test name="TestOnEdge" duration-ms="13133" started-at="2021-12-12T21:13:31 SGT" finished-at="2021-12-12T21:13:44 SGT">
+      <class name="Demo.TestNGMultiBrowserDemo">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:Demo.TestNGMultiBrowserDemo@5fcd892a]" name="setUp" is-config="true" duration-ms="5098" started-at="2021-12-12T21:13:31 SGT" finished-at="2021-12-12T21:13:36 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:Demo.TestNGMultiBrowserDemo@5fcd892a]" name="test1" duration-ms="6192" started-at="2021-12-12T21:13:36 SGT" finished-at="2021-12-12T21:13:42 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Demo.TestNGMultiBrowserDemo@5fcd892a]" name="tearDown" is-config="true" duration-ms="1762" started-at="2021-12-12T21:13:42 SGT" finished-at="2021-12-12T21:13:44 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Demo.TestNGMultiBrowserDemo -->
+    </test> <!-- TestOnEdge -->
+    <test name="TestOnFirefox" duration-ms="18000" started-at="2021-12-12T21:13:31 SGT" finished-at="2021-12-12T21:13:49 SGT">
+      <class name="Demo.TestNGMultiBrowserDemo">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:Demo.TestNGMultiBrowserDemo@7ba18f1b]" name="setUp" is-config="true" duration-ms="12176" started-at="2021-12-12T21:13:31 SGT" finished-at="2021-12-12T21:13:43 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:Demo.TestNGMultiBrowserDemo@7ba18f1b]" name="test1" duration-ms="4834" started-at="2021-12-12T21:13:43 SGT" finished-at="2021-12-12T21:13:48 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Demo.TestNGMultiBrowserDemo@7ba18f1b]" name="tearDown" is-config="true" duration-ms="982" started-at="2021-12-12T21:13:48 SGT" finished-at="2021-12-12T21:13:49 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Demo.TestNGMultiBrowserDemo -->
+    </test> <!-- TestOnFirefox -->
+  </suite> <!-- Suite3 -->
 </testng-results>

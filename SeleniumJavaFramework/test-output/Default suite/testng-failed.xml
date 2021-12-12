@@ -3,11 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Listeners.TestNGListenersDemo">
+      <class name="SauceLabs.SauceLabsTest1">
         <methods>
-          <include name="test1"/>
+          <include name="checkInventoryItemTest"/>
+          <include name="checkAddToCartButtonTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- Listeners.TestNGListenersDemo -->
+      </class> <!-- SauceLabs.SauceLabsTest1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
