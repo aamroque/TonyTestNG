@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="classes" name="ParallelHeadlessExtentReportScreenshot">
+
+<listeners>
+<listener class-name="Listeners.TestNGListeners"></listener>
+</listeners>
+
+  <test name="ParallelHeadlessExtentReportScreenshot">
+    <classes>
+      <class name="Project1.TestCase1Sample"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- ParallelHeadlessExtentReportScreenshot -->

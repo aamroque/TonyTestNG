@@ -76,14 +76,14 @@ public class ExtentReportsDemoWithTestNG {
 //		test1.addScreenCaptureFromPath("screenshot.png");
 	}	
 	
-//	@Test
-//	public void test2() {
-//		ExtentTest test2 = extent.createTest("Google Search TC2","Indicate TC Desc here");
-//		test2.log(Status.INFO,"This step shows usage of log(status, details)");
-//		test2.info("This step shows usage of info(details)");
-//		test2.pass("details", MediaEntityBuilder.createScreenCaptureFromPath("screenshot.png").build());
-//		test2.addScreenCaptureFromPath("screenshot.png");
-//	}	
+	@Test
+	public void test2() {
+	ExtentTest test2 = extent.createTest("Google Search TC2","Sample Google Search");
+	driver.get("https://www.google.com");
+	test2.pass("Navigated to Google.com");
+	test2.pass("details", MediaEntityBuilder.createScreenCaptureFromPath("screenshot1.png").build());
+	test2.addScreenCaptureFromPath("screenshot1.jpg");
+	}	
 	
 	@AfterTest
 		public void tearDownTest() {

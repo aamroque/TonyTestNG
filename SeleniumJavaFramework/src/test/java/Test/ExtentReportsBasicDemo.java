@@ -34,8 +34,8 @@ public class ExtentReportsBasicDemo {
 		driver.findElement(By.name("q")).sendKeys("Automation");
 		test1.pass("Entered text in Search Box");
 
-		driver.findElement(By.name("btnK")).sendKeys(Keys.RETURN);
-		test1.pass("Pressed keyboard ENTER Key");
+		//driver.findElement(By.name("btnK")).sendKeys(Keys.RETURN);
+		//test1.pass("Pressed keyboard ENTER Key");
 		
 		driver.close();
 		driver.quit();

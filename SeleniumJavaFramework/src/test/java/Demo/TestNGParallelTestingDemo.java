@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import org.apache.commons.compress.harmony.unpack200.bytecode.forms.ThisInitMethodRefForm;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -12,6 +13,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
+import org.testng.internal.MethodInstance;
 
 public class TestNGParallelTestingDemo {
 
@@ -20,7 +22,8 @@ public class TestNGParallelTestingDemo {
 	//use below values to run in multi-thread
 	//this means test1 will run 3 times
 	//@Test(threadPoolSize=3, invocationCount=3, timeOut=1000)
-	@Test
+	
+	@Test(priority=1)
 	public void test1() throws IOException {
 		System.out.println("I am inside test1 | "+Thread.currentThread().getId());
 		String projectPath = System.getProperty("user.dir");
@@ -34,7 +37,7 @@ public class TestNGParallelTestingDemo {
 //	    Screenshot with No TimeStamp
 //		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 //		FileUtils.copyFile(scrFile, new File("./target/Test Results/TC1/image1.png"));
-//		Sceenshot with TimeStamp
+//		Screenshot with TimeStamp
 		TakesScreenshot ts = (TakesScreenshot)driver;
 		File fs = ts.getScreenshotAs(OutputType.FILE);
 		Date d = new Date();
@@ -45,7 +48,7 @@ public class TestNGParallelTestingDemo {
 		System.out.println("Test1 Completed");
 	}
 	
-	@Test
+	@Test(priority=2)
 	public void test2() throws IOException {
 		System.out.println("I am inside test2 | "+Thread.currentThread().getId());
 		String projectPath = System.getProperty("user.dir");
@@ -66,7 +69,7 @@ public class TestNGParallelTestingDemo {
 		System.out.println("Test2 Completed");
 	}
 	
-	@Test
+	@Test(priority=3)
 	public void test3() throws IOException {
 		System.out.println("I am inside test3 | "+Thread.currentThread().getId());
 		String projectPath = System.getProperty("user.dir");
