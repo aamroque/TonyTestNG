@@ -27,7 +27,7 @@ public class PropertiesFile {
 		try {
 			InputStream input = new FileInputStream(projectPath+"/src/test/java/Config/Config.properties");
 			prop.load(input);
-			//The COnfig file is now declared in this class
+			//The Config file is now declared in this class
 			//You can start getting the values after this line.
 			String browser = prop.getProperty("browser");
 			System.out.println(browser);

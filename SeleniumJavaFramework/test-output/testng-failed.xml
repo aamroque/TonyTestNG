@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite2]">
-  <listeners>
-    <listener class-name="Listeners.TestNGListeners"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Listeners.TestNGListenersDemo">
+      <class name="Demo.TestNGParallelTestingDemo">
         <methods>
           <include name="test1"/>
         </methods>
-      </class> <!-- Listeners.TestNGListenersDemo -->
+      </class> <!-- Demo.TestNGParallelTestingDemo -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite2] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
