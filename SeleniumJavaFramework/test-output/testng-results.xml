@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite5" duration-ms="4940" started-at="2021-12-14T17:26:42 SGT" finished-at="2021-12-14T17:26:46 SGT">
+  <suite name="Suite5" duration-ms="5341" started-at="2021-12-14T17:50:38 SGT" finished-at="2021-12-14T17:50:43 SGT">
     <groups>
     </groups>
-    <test name="Test2" duration-ms="4940" started-at="2021-12-14T17:26:42 SGT" finished-at="2021-12-14T17:26:46 SGT">
+    <test name="Parallel Testing in Headless Chrome with Screenshots" duration-ms="5341" started-at="2021-12-14T17:50:38 SGT" finished-at="2021-12-14T17:50:43 SGT">
       <class name="Demo.TestNGParallelTestingDemo">
-        <test-method status="PASS" signature="test1()[pri:0, instance:Demo.TestNGParallelTestingDemo@5891e32e]" name="test1" duration-ms="4892" started-at="2021-12-14T17:26:42 SGT" finished-at="2021-12-14T17:26:46 SGT">
+        <test-method status="PASS" signature="test1()[pri:0, instance:Demo.TestNGParallelTestingDemo@5891e32e]" name="test1" duration-ms="5289" started-at="2021-12-14T17:50:38 SGT" finished-at="2021-12-14T17:50:43 SGT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:Demo.TestNGParallelTestingDemo@5891e32e]" name="test2" duration-ms="4855" started-at="2021-12-14T17:26:42 SGT" finished-at="2021-12-14T17:26:46 SGT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="test3()[pri:0, instance:Demo.TestNGParallelTestingDemo@5891e32e]" name="test3" duration-ms="4875" started-at="2021-12-14T17:26:42 SGT" finished-at="2021-12-14T17:26:46 SGT">
+        <test-method status="PASS" signature="test3()[pri:0, instance:Demo.TestNGParallelTestingDemo@5891e32e]" name="test3" duration-ms="5290" started-at="2021-12-14T17:50:38 SGT" finished-at="2021-12-14T17:50:43 SGT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:Demo.TestNGParallelTestingDemo@5891e32e]" name="test2" duration-ms="5255" started-at="2021-12-14T17:50:38 SGT" finished-at="2021-12-14T17:50:43 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
       </class> <!-- Demo.TestNGParallelTestingDemo -->
-    </test> <!-- Test2 -->
+    </test> <!-- Parallel Testing in Headless Chrome with Screenshots -->
   </suite> <!-- Suite5 -->
 </testng-results>

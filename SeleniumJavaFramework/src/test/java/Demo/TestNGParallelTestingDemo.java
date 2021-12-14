@@ -2,6 +2,8 @@ package Demo;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -29,9 +31,18 @@ public class TestNGParallelTestingDemo {
 		WebDriver driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.get("https://www.google.com");
-		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(scrFile, new File("./target/Test Results/TC1/image1.png"));
+//	    Screenshot with No TimeStamp
+//		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+//		FileUtils.copyFile(scrFile, new File("./target/Test Results/TC1/image1.png"));
+//		Sceenshot with TimeStamp
+		TakesScreenshot ts = (TakesScreenshot)driver;
+		File fs = ts.getScreenshotAs(OutputType.FILE);
+		Date d = new Date();
+		SimpleDateFormat sdf = new SimpleDateFormat("ddMMYYY_HHmmss");
+		String timeStamp = sdf.format(d);
+		FileUtils.copyFile(fs, new File("./target/Test Results/TC1_"+timeStamp+"/image1.png"));
 		driver.close();		
+		System.out.println("Test1 Completed");
 	}
 	
 	@Test
@@ -45,9 +56,14 @@ public class TestNGParallelTestingDemo {
 		WebDriver driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.get("https://www.google.com");
-		File scrFile2 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(scrFile2, new File("./target/Test Results/TC2/image1.png"));
+		TakesScreenshot ts = (TakesScreenshot)driver;
+		File fs = ts.getScreenshotAs(OutputType.FILE);
+		Date d = new Date();
+		SimpleDateFormat sdf = new SimpleDateFormat("ddMMYYY_HHmmss");
+		String timeStamp = sdf.format(d);
+		FileUtils.copyFile(fs, new File("./target/Test Results/TC2_"+timeStamp+"/image1.png"));
 		driver.close();		
+		System.out.println("Test2 Completed");
 	}
 	
 	@Test
@@ -61,9 +77,14 @@ public class TestNGParallelTestingDemo {
 		WebDriver driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.get("https://www.google.com");
-		File scrFile3 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(scrFile3, new File("./target/Test Results/TC3/image1.png"));
+		TakesScreenshot ts = (TakesScreenshot)driver;
+		File fs = ts.getScreenshotAs(OutputType.FILE);
+		Date d = new Date();
+		SimpleDateFormat sdf = new SimpleDateFormat("ddMMYYY_HHmmss");
+		String timeStamp = sdf.format(d);
+		FileUtils.copyFile(fs, new File("./target/Test Results/TC3_"+timeStamp+"/image1.png"));
 		driver.close();		
+		System.out.println("Test3 Completed");
 	}
 	
 }

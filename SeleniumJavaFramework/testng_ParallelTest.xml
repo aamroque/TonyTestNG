@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite5" parallel="methods" thread-count="3">
-  <test name="Test2">
+  <test name="Parallel Testing in Headless Chrome with Screenshots">
     <classes>
       <class name="Demo.TestNGParallelTestingDemo"/>
     </classes>
