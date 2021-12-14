@@ -13,9 +13,10 @@ public class BrowserTest {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-//		//Always check your Browser version
-//		System.setProperty("webdriver.chrome.driver", "./webdrivers/chromedriver.exe");
-//		WebDriver driver = new ChromeDriver();
+//      Always check your Browser version
+		
+		System.setProperty("webdriver.chrome.driver", "./webdrivers/chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
  
 //	    System.setProperty("webdriver.gecko.driver", "./webdrivers/geckodriver.exe");
 //		WebDriver driver = new FirefoxDriver();
@@ -23,21 +24,21 @@ public class BrowserTest {
 //		System.setProperty("webdriver.edge.driver", "./webdrivers/msedgedriver.exe");
 //		WebDriver driver = new EdgeDriver();
 		
-//		//IE will go aways soon
+//		//IE will go away soon
 //	    System.setProperty("webdriver.ie.driver", "./webdrivers/IEDriverServer.exe");
 //		WebDriver driver = new InternetExplorerDriver();
 		
-		//OR USE WebDriverManager
-		//System.setProperty("webdriver.chrome.driver","./webdrivers/chromedriver.exe");
-		//System.setProperty("webdriver.gecko.driver","./webdrivers/geckodriver.exe");
-		//System.setProperty("webdriver.edge.driver","./webdrivers/msedgedriver.exe");
-		//System.setProperty("webdriver.opera.driver","/path/to/operadriver");
-		//System.setProperty("webdriver.ie.driver","/path/to/IEDriverServer");
+//		OR USE WebDriverManager
+//		System.setProperty("webdriver.chrome.driver","./webdrivers/chromedriver.exe");
+//		System.setProperty("webdriver.gecko.driver","./webdrivers/geckodriver.exe");
+//		System.setProperty("webdriver.edge.driver","./webdrivers/msedgedriver.exe");
+//		System.setProperty("webdriver.opera.driver","/path/to/operadriver");
+//		System.setProperty("webdriver.ie.driver","/path/to/IEDriverServer");
 			
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver();
+//		WebDriverManager.chromedriver().setup();
+//		WebDriver driver = new ChromeDriver();
 		
-//		//If you require a specific version, use below Syntax
+//		If you require a specific version, use below Syntax
 //		WebDriverManager.chromedriver().driverVersion("2.36").setup();
 //		WebDriver driver = new ChromeDriver();		
 		
@@ -57,8 +58,9 @@ public class BrowserTest {
 		driver.get("https://www.google.com");
 		
 		Thread.sleep(3000);
-		driver.quit();
 		driver.close();
+		driver.quit();
+		System.out.println("Test Completed");
 	}
 	
 }

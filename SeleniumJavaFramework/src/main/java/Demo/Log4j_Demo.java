@@ -7,6 +7,12 @@ import org.apache.logging.log4j.Logger;
 // Setup is found on src/main/resources Log4j2.properties
 // Captured Logs are found on logs MyLo4j_Logs.log
 
+//To not overwrite the logs, use:
+//appender.file.append=true
+//to off the logs use:
+//logger.file.level = off
+//rootLogger.level = off
+
 public class Log4j_Demo {
 
 	private static Logger logger = LogManager.getLogger(Log4j_Demo.class);
