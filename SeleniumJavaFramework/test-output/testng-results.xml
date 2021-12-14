@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="ParallelHeadlessExtentReportScreenshot" duration-ms="6126" started-at="2021-12-14T21:07:48 SGT" finished-at="2021-12-14T21:07:54 SGT">
+  <suite name="ParallelHeadlessExtentReportScreenshot" duration-ms="6428" started-at="2021-12-14T22:43:31 SGT" finished-at="2021-12-14T22:43:37 SGT">
     <groups>
     </groups>
-    <test name="ParallelHeadlessExtentReportScreenshot" duration-ms="6126" started-at="2021-12-14T21:07:48 SGT" finished-at="2021-12-14T21:07:54 SGT">
+    <test name="ParallelHeadlessExtentReportScreenshot" duration-ms="6428" started-at="2021-12-14T22:43:31 SGT" finished-at="2021-12-14T22:43:37 SGT">
       <class name="Project1.TestCase1Sample">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Project1.TestCase1Sample@4cf4d528]" name="setUp" is-config="true" duration-ms="268" started-at="2021-12-14T21:07:48 SGT" finished-at="2021-12-14T21:07:48 SGT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Project1.TestCase1Sample@4cf4d528]" name="setUp" is-config="true" duration-ms="285" started-at="2021-12-14T22:43:30 SGT" finished-at="2021-12-14T22:43:31 SGT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="setUpTest()[pri:0, instance:Project1.TestCase1Sample@4cf4d528]" name="setUpTest" is-config="true" duration-ms="3621" started-at="2021-12-14T21:07:48 SGT" finished-at="2021-12-14T21:07:52 SGT">
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:Project1.TestCase1Sample@4cf4d528]" name="setUpTest" is-config="true" duration-ms="3841" started-at="2021-12-14T22:43:31 SGT" finished-at="2021-12-14T22:43:35 SGT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method status="PASS" signature="test3()[pri:1, instance:Project1.TestCase1Sample@4cf4d528]" name="test3" duration-ms="1060" started-at="2021-12-14T21:07:52 SGT" finished-at="2021-12-14T21:07:53 SGT">
+        <test-method status="PASS" signature="test3()[pri:1, instance:Project1.TestCase1Sample@4cf4d528]" name="test3" duration-ms="1099" started-at="2021-12-14T22:43:35 SGT" finished-at="2021-12-14T22:43:36 SGT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test3 -->
-        <test-method status="PASS" signature="test1()[pri:2, instance:Project1.TestCase1Sample@4cf4d528]" name="test1" duration-ms="433" started-at="2021-12-14T21:07:53 SGT" finished-at="2021-12-14T21:07:53 SGT">
+        <test-method status="PASS" signature="test1()[pri:2, instance:Project1.TestCase1Sample@4cf4d528]" name="test1" duration-ms="447" started-at="2021-12-14T22:43:36 SGT" finished-at="2021-12-14T22:43:36 SGT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test2()[pri:3, instance:Project1.TestCase1Sample@4cf4d528]" name="test2" duration-ms="295" started-at="2021-12-14T21:07:53 SGT" finished-at="2021-12-14T21:07:54 SGT">
+        <test-method status="PASS" signature="test2()[pri:3, instance:Project1.TestCase1Sample@4cf4d528]" name="test2" duration-ms="332" started-at="2021-12-14T22:43:36 SGT" finished-at="2021-12-14T22:43:36 SGT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:Project1.TestCase1Sample@4cf4d528]" name="tearDownTest" is-config="true" duration-ms="671" started-at="2021-12-14T21:07:54 SGT" finished-at="2021-12-14T21:07:54 SGT">
+        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:Project1.TestCase1Sample@4cf4d528]" name="tearDownTest" is-config="true" duration-ms="668" started-at="2021-12-14T22:43:36 SGT" finished-at="2021-12-14T22:43:37 SGT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Project1.TestCase1Sample@4cf4d528]" name="tearDown" is-config="true" duration-ms="427" started-at="2021-12-14T21:07:54 SGT" finished-at="2021-12-14T21:07:55 SGT">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Project1.TestCase1Sample@4cf4d528]" name="tearDown" is-config="true" duration-ms="484" started-at="2021-12-14T22:43:37 SGT" finished-at="2021-12-14T22:43:38 SGT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -3,7 +3,7 @@
 <suite thread-count="3" parallel="classes" name="ParallelHeadlessExtentReportScreenshot">
 
 <listeners>
-<listener class-name="Listeners.TestNGListeners"></listener>
+<listener class-name="Project1.TestNGListeners"></listener>
 </listeners>
 
   <test name="ParallelHeadlessExtentReportScreenshot">
