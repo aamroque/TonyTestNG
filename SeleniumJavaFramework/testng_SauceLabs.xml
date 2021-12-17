@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SauceLabs Demo" parallel="tests" thread-count="2" verbose="2">
+
+<test name="SauceLabs Chrome">
+<parameter name="browser" value="chrome" />
+<parameter name="platformName" value="windows 10" />
+    <classes>
+      <class name="SauceLabs.SauceLabsDemo"/>
+    </classes>
+</test>
+
+<test name="SauceLabs Firefox">
+<parameter name="browser" value="firefox" />
+<parameter name="platformName" value="windows 10" />
+    <classes>
+      <class name="SauceLabs.SauceLabsDemo"/>
+    </classes>
+  </test>
+
+</suite> <!-- Suite -->

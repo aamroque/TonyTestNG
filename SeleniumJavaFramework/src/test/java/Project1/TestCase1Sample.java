@@ -56,7 +56,7 @@ public class TestCase1Sample {
 		driver.manage().window().maximize();
 	}
 
-	@Test(priority=2)
+	@Test(priority=1)
 	public void test1() throws IOException {
 		ExtentTest test1 = extent.createTest("Google Search TC1","Sample Google Search 1");
 		System.out.println("I am inside Test1 | "+Thread.currentThread().getId());
@@ -73,7 +73,7 @@ public class TestCase1Sample {
 		System.out.println("Test1 Completed");
 	}
 
-	@Test(priority=3)
+	@Test(priority=2)
 	public void test2() throws IOException {
 		ExtentTest test2 = extent.createTest("Google Search TC2","Sample Google Search 2");
 		System.out.println("I am inside Test2 | "+Thread.currentThread().getId());
@@ -90,7 +90,7 @@ public class TestCase1Sample {
 		System.out.println("Test2 Completed");
 	}
 
-	@Test(priority=1)
+	@Test(priority=3)
 	public void test3() throws IOException {
 		ExtentTest test3 = extent.createTest("Google Search TC3","Sample Google Search");
 		System.out.println("I am inside Test3 | "+Thread.currentThread().getId());

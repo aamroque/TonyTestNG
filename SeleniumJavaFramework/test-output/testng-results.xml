@@ -1,41 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="ParallelHeadlessExtentReportScreenshot" duration-ms="6428" started-at="2021-12-14T22:43:31 SGT" finished-at="2021-12-14T22:43:37 SGT">
+  <suite name="SauceLabs Demo" duration-ms="48612" started-at="2021-12-17T17:04:09 SGT" finished-at="2021-12-17T17:04:58 SGT">
     <groups>
     </groups>
-    <test name="ParallelHeadlessExtentReportScreenshot" duration-ms="6428" started-at="2021-12-14T22:43:31 SGT" finished-at="2021-12-14T22:43:37 SGT">
-      <class name="Project1.TestCase1Sample">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Project1.TestCase1Sample@4cf4d528]" name="setUp" is-config="true" duration-ms="285" started-at="2021-12-14T22:43:30 SGT" finished-at="2021-12-14T22:43:31 SGT">
+    <test name="SauceLabs Chrome" duration-ms="31944" started-at="2021-12-17T17:04:09 SGT" finished-at="2021-12-17T17:04:41 SGT">
+      <class name="SauceLabs.SauceLabsDemo">
+        <test-method status="PASS" signature="setUp(java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:SauceLabs.SauceLabsDemo@c81cdd1]" name="setUp" is-config="true" duration-ms="10669" started-at="2021-12-17T17:04:09 SGT" finished-at="2021-12-17T17:04:20 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows 10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void SauceLabs.SauceLabsDemo.checkInventoryItemTest()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="setUpTest()[pri:0, instance:Project1.TestCase1Sample@4cf4d528]" name="setUpTest" is-config="true" duration-ms="3841" started-at="2021-12-14T22:43:31 SGT" finished-at="2021-12-14T22:43:35 SGT">
+        <test-method status="PASS" signature="checkInventoryItemTest()[pri:1, instance:SauceLabs.SauceLabsDemo@c81cdd1]" name="checkInventoryItemTest" duration-ms="4563" started-at="2021-12-17T17:04:20 SGT" finished-at="2021-12-17T17:04:24 SGT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method status="PASS" signature="test3()[pri:1, instance:Project1.TestCase1Sample@4cf4d528]" name="test3" duration-ms="1099" started-at="2021-12-14T22:43:35 SGT" finished-at="2021-12-14T22:43:36 SGT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test3 -->
-        <test-method status="PASS" signature="test1()[pri:2, instance:Project1.TestCase1Sample@4cf4d528]" name="test1" duration-ms="447" started-at="2021-12-14T22:43:36 SGT" finished-at="2021-12-14T22:43:36 SGT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="test2()[pri:3, instance:Project1.TestCase1Sample@4cf4d528]" name="test2" duration-ms="332" started-at="2021-12-14T22:43:36 SGT" finished-at="2021-12-14T22:43:36 SGT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="tearDownTest()[pri:0, instance:Project1.TestCase1Sample@4cf4d528]" name="tearDownTest" is-config="true" duration-ms="668" started-at="2021-12-14T22:43:36 SGT" finished-at="2021-12-14T22:43:37 SGT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Project1.TestCase1Sample@4cf4d528]" name="tearDown" is-config="true" duration-ms="484" started-at="2021-12-14T22:43:37 SGT" finished-at="2021-12-14T22:43:38 SGT">
+        </test-method> <!-- checkInventoryItemTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:SauceLabs.SauceLabsDemo@c81cdd1]" name="tearDown" is-config="true" duration-ms="1967" started-at="2021-12-17T17:04:24 SGT" finished-at="2021-12-17T17:04:26 SGT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Project1.TestCase1Sample -->
-    </test> <!-- ParallelHeadlessExtentReportScreenshot -->
-  </suite> <!-- ParallelHeadlessExtentReportScreenshot -->
+        <test-method status="PASS" signature="setUp(java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:SauceLabs.SauceLabsDemo@c81cdd1]" name="setUp" is-config="true" duration-ms="10919" started-at="2021-12-17T17:04:26 SGT" finished-at="2021-12-17T17:04:37 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows 10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void SauceLabs.SauceLabsDemo.checkAddToCartButtonTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="checkAddToCartButtonTest()[pri:2, instance:SauceLabs.SauceLabsDemo@c81cdd1]" name="checkAddToCartButtonTest" duration-ms="3394" started-at="2021-12-17T17:04:37 SGT" finished-at="2021-12-17T17:04:41 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddToCartButtonTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:SauceLabs.SauceLabsDemo@c81cdd1]" name="tearDown" is-config="true" duration-ms="363" started-at="2021-12-17T17:04:41 SGT" finished-at="2021-12-17T17:04:41 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- SauceLabs.SauceLabsDemo -->
+    </test> <!-- SauceLabs Chrome -->
+    <test name="SauceLabs Firefox" duration-ms="48612" started-at="2021-12-17T17:04:09 SGT" finished-at="2021-12-17T17:04:58 SGT">
+      <class name="SauceLabs.SauceLabsDemo">
+        <test-method status="PASS" signature="setUp(java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:SauceLabs.SauceLabsDemo@768b970c]" name="setUp" is-config="true" duration-ms="18545" started-at="2021-12-17T17:04:09 SGT" finished-at="2021-12-17T17:04:28 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows 10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void SauceLabs.SauceLabsDemo.checkInventoryItemTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="checkInventoryItemTest()[pri:1, instance:SauceLabs.SauceLabsDemo@768b970c]" name="checkInventoryItemTest" duration-ms="5330" started-at="2021-12-17T17:04:28 SGT" finished-at="2021-12-17T17:04:33 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkInventoryItemTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:SauceLabs.SauceLabsDemo@768b970c]" name="tearDown" is-config="true" duration-ms="287" started-at="2021-12-17T17:04:33 SGT" finished-at="2021-12-17T17:04:33 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:SauceLabs.SauceLabsDemo@768b970c]" name="setUp" is-config="true" duration-ms="16378" started-at="2021-12-17T17:04:33 SGT" finished-at="2021-12-17T17:04:50 SGT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows 10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void SauceLabs.SauceLabsDemo.checkAddToCartButtonTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="checkAddToCartButtonTest()[pri:2, instance:SauceLabs.SauceLabsDemo@768b970c]" name="checkAddToCartButtonTest" duration-ms="7659" started-at="2021-12-17T17:04:50 SGT" finished-at="2021-12-17T17:04:57 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkAddToCartButtonTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:SauceLabs.SauceLabsDemo@768b970c]" name="tearDown" is-config="true" duration-ms="353" started-at="2021-12-17T17:04:57 SGT" finished-at="2021-12-17T17:04:58 SGT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- SauceLabs.SauceLabsDemo -->
+    </test> <!-- SauceLabs Firefox -->
+  </suite> <!-- SauceLabs Demo -->
 </testng-results>

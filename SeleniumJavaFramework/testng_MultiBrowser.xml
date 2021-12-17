@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite3" parallel="tests" thread-count="3">
+<suite name="Multi Browser Testing Demo" parallel="tests" thread-count="3">
  
 <listeners>
 <listener class-name="Listeners.TestNGListeners"></listener>

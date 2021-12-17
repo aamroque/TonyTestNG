@@ -6,9 +6,10 @@
 <listener class-name="Project1.TestNGListeners"></listener>
 </listeners>
 
-  <test name="ParallelHeadlessExtentReportScreenshot">
+<test name="SauceLabs Chrome">
     <classes>
       <class name="Project1.TestCase1Sample"/>
     </classes>
-  </test> <!-- Test -->
+</test>
+
 </suite> <!-- ParallelHeadlessExtentReportScreenshot -->

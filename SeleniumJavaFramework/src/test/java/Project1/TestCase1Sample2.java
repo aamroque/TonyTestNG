@@ -46,6 +46,8 @@ public class TestCase1Sample2 {
 		Date d = new Date();
 		SimpleDateFormat sdf = new SimpleDateFormat("ddMMYYY_HHmmss");
 		String timeStamp = sdf.format(d);
+//		String tcName = (this.methodName);
+//		FileUtils.copyFile(fs, new File("./target/Test Results/"+tcName+"_"+timeStamp+"/image1.png"));
 		FileUtils.copyFile(fs, new File("./target/Test Results/TC_"+timeStamp+"/image1.png"));
 		System.out.println("Test Completed");
 	}

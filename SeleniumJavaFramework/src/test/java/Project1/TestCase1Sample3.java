@@ -5,8 +5,8 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import org.apache.commons.compress.harmony.unpack200.bytecode.forms.ThisInitMethodRefForm;
 import org.apache.commons.io.FileUtils;
-import org.junit.jupiter.api.MethodOrderer.MethodName;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -22,16 +22,16 @@ import org.testng.internal.MethodInstance;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-import com.github.dockerjava.transport.DockerHttpClient.Request.Method;
 
-public class TestCase1Sample3 {
+import Project1.SauceLabsBase;
+
+public class TestCase1Sample3 extends SauceLabsBase {
 
 	//WebDriver driver = null;
 
 	//Screenshot with No TimeStamp
 	//File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 	//FileUtils.copyFile(scrFile, new File("./target/Test Results/TC1/image1.png"));
-	
 	//use below values to run in multi-thread
 	//this means test1 will run 3 times
 	//@Test(threadPoolSize=3, invocationCount=3, timeOut=1000)
@@ -40,21 +40,6 @@ public class TestCase1Sample3 {
 	ExtentReports extent;
 	WebDriver driver;
 
-	public void screenShot () throws IOException {
-//		TakesScreenshot ts = (TakesScreenshot)driver;
-//		File fs = ts.getScreenshotAs(OutputType.FILE);
-//		Date d = new Date();
-//		SimpleDateFormat sdf = new SimpleDateFormat("ddMMYYY_HHmmss");
-//		String timeStamp = sdf.format(d);
-//		FileUtils.copyFile(fs, new File("./target/Test Results/TC_"+timeStamp+"/image1.png"));
-//		System.out.println("Test Completed");
-		Date currentdate = new Date();
-		String screenshotfilename = currentdate.toString().replace(" ", "-").replace(":", "-");
-		System.out.println(screenshotfilename);
-		File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(screenshotFile, new File("./target/Test Results/TC/"+screenshotfilename+".png"));
-	}
-
 	@BeforeSuite
 	public void setUp() {	
 		htmlReporter = new ExtentSparkReporter("extentReports.html");
@@ -62,16 +47,17 @@ public class TestCase1Sample3 {
 		extent.attachReporter(htmlReporter);
 	}	
 
-	@BeforeTest
-	public void setUpTest() {
-		String projectPath = System.getProperty("user.dir");
-		System.out.println(projectPath);
-		System.setProperty("webdriver.chrome.driver", projectPath+"/webdrivers/chromedriver.exe");
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--headless");
-		driver = new ChromeDriver(options);
-		driver.manage().window().maximize();
-	}
+		@BeforeTest
+//		public void setUpTest() {
+////			String projectPath = System.getProperty("user.dir");
+////			System.out.println(projectPath);
+////			System.setProperty("webdriver.chrome.driver", projectPath+"/webdrivers/chromedriver.exe");
+////			ChromeOptions options = new ChromeOptions();
+////			options.addArguments("--headless");
+////			driver = new ChromeDriver(options);
+////			driver.manage().window().maximize();
+//			System.out.println("Running in SauceLabs");
+//		}
 
 	@Test(priority=1)
 	public void test1() throws IOException {
@@ -80,7 +66,14 @@ public class TestCase1Sample3 {
 
 		driver.get("https://www.google.com");
 		test1.pass("Navigated to Google.com");
-		screenShot();
+
+		TakesScreenshot ts = (TakesScreenshot)driver;
+		File fs = ts.getScreenshotAs(OutputType.FILE);
+		Date d = new Date();
+		SimpleDateFormat sdf = new SimpleDateFormat("ddMMYYY_HHmmss");
+		String timeStamp = sdf.format(d);
+		FileUtils.copyFile(fs, new File("./target/Test Results/TC1_"+timeStamp+"/image1.png"));
+		System.out.println("Test1 Completed");
 	}
 
 	@Test(priority=2)
@@ -90,7 +83,14 @@ public class TestCase1Sample3 {
 
 		driver.get("https://www.google.com");
 		test2.pass("Navigated to Google.com");
-		screenShot();
+
+		TakesScreenshot ts = (TakesScreenshot)driver;
+		File fs = ts.getScreenshotAs(OutputType.FILE);
+		Date d = new Date();
+		SimpleDateFormat sdf = new SimpleDateFormat("ddMMYYY_HHmmss");
+		String timeStamp = sdf.format(d);
+		FileUtils.copyFile(fs, new File("./target/Test Results/TC2_"+timeStamp+"/image1.png"));
+		System.out.println("Test2 Completed");
 	}
 
 	@Test(priority=3)
@@ -100,17 +100,23 @@ public class TestCase1Sample3 {
 
 		driver.get("https://www.google.com");
 		test3.pass("Navigated to Google.com");
-		screenShot();
+
+		TakesScreenshot ts = (TakesScreenshot)driver;
+		File fs = ts.getScreenshotAs(OutputType.FILE);
+		Date d = new Date();
+		SimpleDateFormat sdf = new SimpleDateFormat("ddMMYYY_HHmmss");
+		String timeStamp = sdf.format(d);
+		FileUtils.copyFile(fs, new File("./target/Test Results/TC3_"+timeStamp+"/image1.png"));
+		System.out.println("Test3 Completed");
 	}
 
-	@AfterTest
-	public void tearDownTest() {
-		driver.close();
-		driver.quit();
-	}
+//	@AfterTest
+//	public void tearDownTest() {
+//		System.out.println("This is tearDown Test");
+//	}
 
 	@AfterSuite	
-	public void tearDown() {
+	public void tearDownSuite() {
 		extent.flush();
 		System.out.println("Test Suite Executed and Completed");
 	}
